@@ -16,24 +16,24 @@
 
 	</head>
 
-	<body class="is-preload">
+	<body class="is-preload" style="background-color:grey;">
 		<div id="wrapper">
 			<div id="bg"></div>
-			<div id="overlay"></div>
+			
 			<div id="main">
 			
 				<!-- Header -->
 					<header id="header">
 						<h1>Bruno Cloud Data</h1>
 						<p>Economico &nbsp;&bull;&nbsp; Seguro &nbsp;&bull;&nbsp; Pratico</p>
-						<form action="http://www.localhost/teste/arquivos.php" name="log" method="post">
+						<form action="arquivos.php" name="log" method="post">
 							<p class="par">Nick</p>
 							<input class="tipoinput" id="idinputnick" type="text" name="nick">
 							<p class="par">Senha</p>
 							<input class="tipoinput" id="idinputsenha" type="text" name="senha"> 
-							<button class="tipobotao" id="loguin" style="display: inline;" type="submit">Loguin</button>
+							<button class="tipobotao" id="loguin" style="display: inline;color: white;font-size: 18px;" type="submit">Loguin</button>
 						</form>
-						<button class="tipobotao" id="cadastro" style="display: inline;" onclick="funccadastrar()">cadastrar</button>
+						<button class="tipobotao" id="cadastro" style="display: inline;color: white;font-size: 18px;" onclick="funccadastrar()">cadastrar</button>
 
 						<nav>
 							<ul>

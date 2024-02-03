@@ -7,11 +7,12 @@
   $sql="SELECT `numero`, `valor` FROM `cap` WHERE numero=$valor;";
 
   if(mysqli_query($conecxao,$sql)){
+    
     $resultado = mysqli_query($conecxao,$sql);
     $dados= mysqli_fetch_array($resultado);
     $texto= $dados['valor'];
 }else{
-    
+  
 }
 
 mysqli_close($conecxao);

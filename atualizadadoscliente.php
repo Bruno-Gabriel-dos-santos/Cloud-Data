@@ -52,6 +52,7 @@ $linkbaixar= [1 => "#",2 => "#",3 => "#",4 => "#",5 => "#",6 => "#",7 => "#",8 =
 // utilizando o nick pega todos os nomes e ids dos dados arquivos no banco
 
 
+
 $sqlnomearq="SELECT `nome` FROM `dados` WHERE nick='$nick';";
     if(mysqli_query($conecxao,$sqlnomearq)){
            
@@ -59,6 +60,7 @@ $sqlnomearq="SELECT `nome` FROM `dados` WHERE nick='$nick';";
         
 
         // deu certo
+        
         while(1){
         $dados= mysqli_fetch_array($resultado);
         if($dados!=NULL){
@@ -83,12 +85,15 @@ $sqlnomearq="SELECT `nome` FROM `dados` WHERE nick='$nick';";
         }else{break;}
             
         }
+
+        
      
      }else{
          echo"0"; //deu errado apaga os dados
          mysqli_close($conecxao);
          die();
      }
+
 
      $_SESSION['totaldenomessession']=$contadordearquivos;
      $valortotaldapagina=(int)($contadordearquivos/15);
@@ -100,7 +105,6 @@ $sqlnomearq="SELECT `nome` FROM `dados` WHERE nick='$nick';";
      $inicionomes=$_SESSION['nomesdado'];
      
      
-
 
 
 

@@ -1,13 +1,15 @@
 <?php
 $servidor="localhost";
-$usuario="pma";
-$senhabancodedados="JujvJMA]BUM)CMu*";
-$banco="capcha";
+$usuario="user_cloud";
+$senhabancodedados="uma_senha";
+$banco="DB_cloud";
 
 $conecxao=mysqli_connect($servidor,$usuario,$senhabancodedados,$banco);
 
 if(!$conecxao){
-    die;
+  echo "morreu";  die;
+}else{
+    
 }
 
 

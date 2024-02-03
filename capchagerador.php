@@ -13,8 +13,8 @@ for($l=0;$l!=1000;$l++){
 
 for($i=0;$i!=8;$i++){$senha=$senha.$textoAleatorio[rand(0,33)];}
 
-$sql="INSERT INTO `cap`(`numero`, `valor`) VALUES ('[value-1]','$senha')";
-
+$sql="INSERT INTO `cap`(`numero`, `valor`) VALUES ('0','$senha')";
+echo "loop";
 if(mysqli_query($conecxao,$sql)){
     echo "1";
 }else{

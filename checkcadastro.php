@@ -24,7 +24,7 @@ $senhalivre=mysqli_real_escape_string($conecxao,$senha);
 
 $novasenha=hash("sha256",$senhalivre);
 
-$sql="SELECT `nick`, `senha`,`idpasta` FROM `usuarios` WHERE nick='[$nicklivre]'AND senha='[$novasenha]';";
+$sql="SELECT `nick`, `senha`,`idpasta` FROM `usuarios` WHERE nick='$nicklivre'AND senha='$novasenha';";
 
 if(mysqli_query($conecxao,$sql)){
     $resultado = mysqli_query($conecxao,$sql);
@@ -37,7 +37,7 @@ if(mysqli_query($conecxao,$sql)){
        
         $_SESSION["erro"]=1;
        
-       header('Location: /teste');  
+       header('Location: /cloud');  
     }else{
         //usuario existe continuar e verificar senha
         $_SESSION["erro"]=0;

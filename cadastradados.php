@@ -41,7 +41,7 @@ $captchalivre=mysqli_real_escape_string($conecxao,$capcha);
   }
 
 // verifica se o nick ja existe
-$sql1="SELECT  `nick` FROM `usuarios` WHERE nick='[$nicklivre]';";
+$sql1="SELECT  `nick` FROM `usuarios` WHERE nick='$nicklivre';";
 if(mysqli_query($conecxao,$sql1)){
     $resultado = mysqli_query($conecxao,$sql1);
     $dados= mysqli_fetch_array($resultado);
@@ -65,8 +65,8 @@ $sql="INSERT INTO `usuarios`(
 `nick`, 
 `senha`, 
 `idpasta`) VALUES (
-'[$nicklivre]',
-'[$novasenha]',
+'$nicklivre',
+'$novasenha',
 '0')";
 if(mysqli_query($conecxao,$sql)){
    
@@ -79,7 +79,7 @@ if(mysqli_query($conecxao,$sql)){
 }
 // pega o idpasta para fazer uma pasta com o numero do diretorio cadastrado
 // pega o id da tabela dados
-$sql1="SELECT  `nick`,`idpasta` FROM `usuarios` WHERE nick='[$nicklivre]';";
+$sql1="SELECT  `nick`,`idpasta` FROM `usuarios` WHERE nick='$nicklivre';";
 if(mysqli_query($conecxao,$sql1)){
     $resultado = mysqli_query($conecxao,$sql1);
     $dados= mysqli_fetch_array($resultado);

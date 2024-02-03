@@ -10,7 +10,7 @@ $nomelivre=mysqli_real_escape_string($conecxao,$nomedoarquivo);
 
 $novasenha=hash("sha256",$senhalivre);
 
-$sql="SELECT `nick`, `senha`,`idpasta` FROM `usuarios` WHERE nick='[$nicklivre]'AND senha='[$novasenha]';";
+$sql="SELECT `nick`, `senha`,`idpasta` FROM `usuarios` WHERE nick='$nicklivre'AND senha='$novasenha';";
 
 if(mysqli_query($conecxao,$sql)){
     $resultado = mysqli_query($conecxao,$sql);
@@ -20,7 +20,7 @@ if(mysqli_query($conecxao,$sql)){
        // sem cadastro , retornar a pagina inicial
       
        mysqli_close($conecxao);
-       header('Location: /teste'); 
+       header('Location: /cloud'); 
     }else{
         //usuario existe continuar e verificar senha
         $idpasta=$dados[2];
@@ -88,14 +88,14 @@ if($saidaunlink==0){
 
 
     if($nome_classe=="todos"){
-    header('Location: /teste/arquivos.php');}
+    header('Location: /cloud/arquivos.php');}
     if($nome_classe=="fotos"){
-        header('Location: /teste/fotos.php');}
+        header('Location: /cloud/fotos.php');}
     if($nome_classe=="trabalho"){
-        header('Location: /teste/trabalho.php');}
+        header('Location: /cloud/trabalho.php');}
     if($nome_classe=="jogos"){
-        header('Location: /teste/jogos.php');}
+        header('Location: /cloud/jogos.php');}
     if($nome_classe=="compartilhados"){
-        header('Location: /teste/compartilhados.php');}
+        header('Location: /cloud/compartilhados.php');}
 
 ?>

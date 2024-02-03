@@ -1,5 +1,23 @@
-Cloud Data é um serviço de hospedagem de arquivos em nuvem lançado em 2022, que proporciona aos usuários um local confiável para armazenar e gerenciar seus arquivos de maneira conveniente. Com uma interface intuitiva e de fácil utilização, os usuários podem fazer upload de arquivos e pastas diretamente em suas contas, organizando o conteúdo por meio de uma estrutura de pastas.
 
-Uma das vantagens do Cloud Data é a variedade de opções de planos de assinatura disponíveis, que oferecem diferentes capacidades de armazenamento e recursos adicionais. Essa flexibilidade permite que os usuários escolham o pacote mais adequado às suas necessidades de armazenamento e orçamento.
+Cloud Data - Gerenciamento de Arquivos em Nuvem
+O Cloud Data é um sistema eficiente e descomplicado para o gerenciamento de arquivos em nuvem, projetado para ser prático e fácil de usar. Com uma interface de usuário web personalizada e amigável, sua estilização em HTML e CSS garante responsividade e intuição em cada interação.
 
-No geral, o Cloud Data proporciona aos usuários uma solução completa de armazenamento em nuvem, com recursos intuitivos, opções flexíveis de planos e ênfase na segurança dos dados. Isso permite que os usuários gerenciem seus arquivos de forma conveniente e confiável.
+Principais Características
+Interface Responsiva e Intuitiva: A interface do Cloud Data foi cuidadosamente projetada para proporcionar uma experiência de usuário fluida e amigável em qualquer dispositivo, tornando o gerenciamento de arquivos uma tarefa simples.
+
+Login Facilitado: Conta com um sistema de login simplificado, garantindo acesso rápido e seguro aos seus arquivos remotos. Além disso, o processo de cadastro é protegido por um gerador de captcha embutido.
+
+Flexibilidade do PHP Estruturado: Desenvolvido em PHP estruturado, o Cloud Data oferece flexibilidade para modificações e fácil migração para outros padrões arquiteturais. Sua estrutura modular permite personalizações sem complicações.
+
+Controle de Acesso: Implementa um sistema de verificação de usuários para prevenir acessos não autorizados, garantindo a segurança dos seus arquivos armazenados em nuvem.
+
+Configuração Rápida e Descomplicada
+O Cloud Data inclui um migration database com comandos predefinidos para criar a base de dados necessária. Iniciar o Cloud Data, tanto remotamente quanto localmente, é uma tarefa simples. Basta inicializar o banco de dados e copiar/colar os comandos na ordem especificada. Em instantes, seu sistema estará operacional.
+
+Instruções para Configuração:
+
+Inicie seu banco de dados.
+Execute os comandos de migração na ordem especificada.
+ative o gd do seu apache para obter o grafico do capcha.
+Lembre-se de dar permissões 777 na pasta "arquivos" após as configurações iniciais.
+Com estas etapas, o Cloud Data estará pronto para uso, proporcionando uma solução eficaz para o gerenciamento de seus arquivos em nuvem. Explore a simplicidade combinada com funcionalidades robustas e leve o gerenciamento de dados para o próximo nível com o Cloud Data.
