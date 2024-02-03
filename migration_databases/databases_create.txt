@@ -13,16 +13,16 @@ FLUSH PRIVILEGES;
 3 criando a table cap para o captcha , apos use o arquvo geradorcapcha e gera os capchas necessarios para a validação !!!
 
 CREATE TABLE cap (
-    idpasta INT AUTO_INCREMENT PRIMARY KEY,
-    nick VARCHAR(255),
-    senha VARCHAR(255)
+    numero INT AUTO_INCREMENT PRIMARY KEY,
+    valor VARCHAR(255)
 );
 
 4 criando a table usuario
 
 CREATE TABLE usuarios (
-    numero INT AUTO_INCREMENT PRIMARY KEY,
-    valor VARCHAR(255)
+    idpasta INT AUTO_INCREMENT PRIMARY KEY,
+    nick VARCHAR(255),
+    senha VARCHAR(255)
 );
 
 5 criando a classe dados
