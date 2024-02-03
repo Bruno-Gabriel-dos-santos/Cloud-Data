@@ -19,13 +19,13 @@
                 // Verifica se o nome já existe
                 $contador=1;
                 
-                    $verifica_nome = "SELECT nome FROM dados WHERE nome = '$nome_arquivo_bruto'";
+                    $verifica_nome = "SELECT nome FROM dados WHERE nome = '$nome_arquivo_bruto' and nick ='$nick';";
                     $resultado = mysqli_query($conecxao, $verifica_nome);
 
                     if (mysqli_num_rows($resultado) > 0) {
                         $nome_secundario = $nome_arquivo_bruto;
                                 while(true){
-                                    $verifica_nome = "SELECT nome FROM dados WHERE nome = '$nome_secundario'";
+                                    $verifica_nome = "SELECT nome FROM dados WHERE nome = '$nome_secundario' and nick ='$nick';";
                                     $resultado = mysqli_query($conecxao, $verifica_nome);
                 
                                     if (mysqli_num_rows($resultado) > 0) {
