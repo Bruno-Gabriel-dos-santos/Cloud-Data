@@ -1,3 +1,4 @@
+![Cloud_Data](https://github.com/Bruno-Gabriel-dos-santos/Cloud-Data/blob/main/imagem/Screenshot%20from%202024-02-05%2014-08-15.png)
 
 Cloud Data - Gerenciamento de Arquivos em Nuvem
 O Cloud Data é um sistema eficiente e descomplicado para o gerenciamento de arquivos em nuvem, projetado para ser prático e fácil de usar. Com uma interface de usuário web personalizada e amigável, sua estilização em HTML e CSS garante responsividade e intuição em cada interação.
